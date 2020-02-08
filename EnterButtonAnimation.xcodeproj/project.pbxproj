@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		BDE42EED23EE4A4300004829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42EEC23EE4A4300004829 /* AppDelegate.swift */; };
 		BDE42EEF23EE4A4300004829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42EEE23EE4A4300004829 /* SceneDelegate.swift */; };
-		BDE42EF123EE4A4300004829 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42EF023EE4A4300004829 /* ContentView.swift */; };
 		BDE42EF323EE4A4400004829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE42EF223EE4A4400004829 /* Assets.xcassets */; };
 		BDE42EF623EE4A4400004829 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE42EF523EE4A4400004829 /* Preview Assets.xcassets */; };
 		BDE42EF923EE4A4400004829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE42EF723EE4A4400004829 /* LaunchScreen.storyboard */; };
+		BDE42F0323EE70CD00004829 /* ButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42F0223EE70CD00004829 /* ButtonAnimationView.swift */; };
+		BDE42F0523EE82E700004829 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42F0423EE82E700004829 /* CheckView.swift */; };
+		BDE42F0723EE982300004829 /* BootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42F0623EE982300004829 /* BootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDE42EE923EE4A4300004829 /* EnterButtonAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnterButtonAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE42EEC23EE4A4300004829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDE42EEE23EE4A4300004829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDE42EF023EE4A4300004829 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDE42EF223EE4A4400004829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE42EF523EE4A4400004829 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDE42EF823EE4A4400004829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDE42EFA23EE4A4400004829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE42F0223EE70CD00004829 /* ButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationView.swift; sourceTree = "<group>"; };
+		BDE42F0423EE82E700004829 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		BDE42F0623EE982300004829 /* BootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				BDE42EEC23EE4A4300004829 /* AppDelegate.swift */,
 				BDE42EEE23EE4A4300004829 /* SceneDelegate.swift */,
-				BDE42EF023EE4A4300004829 /* ContentView.swift */,
+				BDE42F0223EE70CD00004829 /* ButtonAnimationView.swift */,
+				BDE42F0623EE982300004829 /* BootView.swift */,
+				BDE42F0423EE82E700004829 /* CheckView.swift */,
 				BDE42EF223EE4A4400004829 /* Assets.xcassets */,
 				BDE42EF723EE4A4400004829 /* LaunchScreen.storyboard */,
 				BDE42EFA23EE4A4400004829 /* Info.plist */,
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE42F0323EE70CD00004829 /* ButtonAnimationView.swift in Sources */,
 				BDE42EED23EE4A4300004829 /* AppDelegate.swift in Sources */,
 				BDE42EEF23EE4A4300004829 /* SceneDelegate.swift in Sources */,
-				BDE42EF123EE4A4300004829 /* ContentView.swift in Sources */,
+				BDE42F0523EE82E700004829 /* CheckView.swift in Sources */,
+				BDE42F0723EE982300004829 /* BootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
