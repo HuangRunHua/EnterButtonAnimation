@@ -12,6 +12,7 @@ struct CheckView: View {
     
     @State private var checkViewAppear = false
     
+    
     var body: some View {
         Path { path in
             path.addLines([
