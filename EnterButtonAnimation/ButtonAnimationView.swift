@@ -13,11 +13,12 @@ struct ButtonAnimationView: View {
     @State private var downloadButtonTapped = false
     @State private var completed = false
     @State private var loading = false
+    @State private var fullcircle = false
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 30)
-                .trim(from: 0, to: self.downloadButtonTapped ? 0.95 : 1)
+                .trim(from: 0, to: self.fullcircle ? 0.95 : 1)
                 .stroke(lineWidth: 5)
                 .frame(width: self.downloadButtonTapped ? 60 : 300, height: 60)
             
@@ -28,6 +29,7 @@ struct ButtonAnimationView: View {
                 .onTapGesture {
                     withAnimation(.default) {
                         self.downloadButtonTapped = true
+                        self.fullcircle = true
                     }
                 }
             
@@ -49,12 +51,13 @@ struct ButtonAnimationView: View {
     }
     
     private func startProcessing() {
-        withAnimation(Animation.linear(duration: 4)) {
+        withAnimation(Animation.linear(duration: 5)) {
             self.loading = true
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             self.completed = true
+            self.fullcircle = false
         }
     }
     
