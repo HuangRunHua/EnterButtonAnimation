@@ -12,22 +12,27 @@ struct CheckView: View {
     
     @State private var checkViewAppear = false
     
-    
     var body: some View {
-        Path { path in
-            path.addLines([
-                .init(x: 70, y: 100),
-                .init(x: 80, y: 110),
-                .init(x: 100, y: 90)
-                ])
-        }.trim(from: 0, to: checkViewAppear ? 1 : 0)
-            .stroke(Color.purple, lineWidth: 2)
+        GeometryReader { geometry in
+            Path { path in
+                    let width: CGFloat = min(geometry.size.width, geometry.size.height)
+                    let height = geometry.size.height
+                            
+                    path.addLines([
+                                .init(x: width/2 - 10, y: height/2 - 10),
+                                .init(x: width/2, y: height/2),
+                                .init(x: width/2 + 20, y: height/2 - 20),
+                                ])
+            }
+            .trim(from: 0, to: checkViewAppear ? 1 : 0)
+            .stroke(style: StrokeStyle(lineWidth: 2.0, lineCap: .round))
             .animation(Animation.easeIn(duration: 0.4))
-            .font(.system(.headline, design: .rounded))
-        .frame(width: 50, height: 50)
+            .frame(width: 50, height: 50)
+            .aspectRatio(1, contentMode: .fit)
             .onAppear() {
                 self.checkViewAppear.toggle()
-        }
+            }
+        }.frame(width: 50, height: 50)
     }
 }
 

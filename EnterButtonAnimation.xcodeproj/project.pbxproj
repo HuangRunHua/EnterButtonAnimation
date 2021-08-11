@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045F526B26C358E6006C3004 /* ButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F526A26C358E6006C3004 /* ButtonAnimationView.swift */; };
 		BDE42EED23EE4A4300004829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42EEC23EE4A4300004829 /* AppDelegate.swift */; };
 		BDE42EEF23EE4A4300004829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42EEE23EE4A4300004829 /* SceneDelegate.swift */; };
 		BDE42EF323EE4A4400004829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE42EF223EE4A4400004829 /* Assets.xcassets */; };
 		BDE42EF623EE4A4400004829 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE42EF523EE4A4400004829 /* Preview Assets.xcassets */; };
 		BDE42EF923EE4A4400004829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE42EF723EE4A4400004829 /* LaunchScreen.storyboard */; };
-		BDE42F0323EE70CD00004829 /* ButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42F0223EE70CD00004829 /* ButtonAnimationView.swift */; };
 		BDE42F0523EE82E700004829 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42F0423EE82E700004829 /* CheckView.swift */; };
 		BDE42F0723EE982300004829 /* BootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42F0623EE982300004829 /* BootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045F526A26C358E6006C3004 /* ButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationView.swift; sourceTree = "<group>"; };
 		BD5CCE0C24B060A200050B9D /* EnterButtonAnimation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnterButtonAnimation.entitlements; sourceTree = "<group>"; };
 		BDE42EE923EE4A4300004829 /* EnterButtonAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnterButtonAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE42EEC23EE4A4300004829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		BDE42EF523EE4A4400004829 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDE42EF823EE4A4400004829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDE42EFA23EE4A4400004829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDE42F0223EE70CD00004829 /* ButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationView.swift; sourceTree = "<group>"; };
 		BDE42F0423EE82E700004829 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		BDE42F0623EE982300004829 /* BootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +64,7 @@
 				BD5CCE0C24B060A200050B9D /* EnterButtonAnimation.entitlements */,
 				BDE42EEC23EE4A4300004829 /* AppDelegate.swift */,
 				BDE42EEE23EE4A4300004829 /* SceneDelegate.swift */,
-				BDE42F0223EE70CD00004829 /* ButtonAnimationView.swift */,
+				045F526A26C358E6006C3004 /* ButtonAnimationView.swift */,
 				BDE42F0623EE982300004829 /* BootView.swift */,
 				BDE42F0423EE82E700004829 /* CheckView.swift */,
 				BDE42EF223EE4A4400004829 /* Assets.xcassets */,
@@ -154,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE42F0323EE70CD00004829 /* ButtonAnimationView.swift in Sources */,
+				045F526B26C358E6006C3004 /* ButtonAnimationView.swift in Sources */,
 				BDE42EED23EE4A4300004829 /* AppDelegate.swift in Sources */,
 				BDE42EEF23EE4A4300004829 /* SceneDelegate.swift in Sources */,
 				BDE42F0523EE82E700004829 /* CheckView.swift in Sources */,

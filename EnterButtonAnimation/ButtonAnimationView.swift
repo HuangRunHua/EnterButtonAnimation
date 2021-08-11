@@ -1,9 +1,9 @@
 //
-//  ButtonAnimationView.swift
+//  MyView.swift
 //  EnterButtonAnimation
 //
-//  Created by Runhua Huang on 2020/2/8.
-//  Copyright © 2020 Runhua Huang. All rights reserved.
+//  Created by Joker Hook on 2021/8/11.
+//  Copyright © 2021 Runhua Huang. All rights reserved.
 //
 
 import SwiftUI
@@ -11,9 +11,9 @@ import SwiftUI
 struct ButtonAnimationView: View {
     
     @State private var downloadButtonTapped = false
-    @State private var completed = false
     @State private var loading = false
     @State private var fullcircle = false
+    @State private var completed = false
     
     var body: some View {
         ZStack {
@@ -21,9 +21,9 @@ struct ButtonAnimationView: View {
                 .trim(from: 0, to: self.fullcircle ? 0.95 : 1)
                 .stroke(lineWidth: 5)
                 .frame(width: self.downloadButtonTapped ? 60 : 300, height: 60)
-            
                 .foregroundColor(self.downloadButtonTapped ? .purple : Color(red: 230/255, green: 230/255, blue: 230/255))
                 .background(self.downloadButtonTapped ? .white : Color(red: 230/255, green: 230/255, blue: 230/255))
+
                 .cornerRadius(30)
                 .rotationEffect(Angle(degrees: self.loading ? 0 : -1440))
                 .onTapGesture {
@@ -45,7 +45,9 @@ struct ButtonAnimationView: View {
             }
             
             if completed {
-                CheckView().offset(x: -60, y: -75)
+                CheckView()
+                    .offset(x: -5, y: 9)
+                    .foregroundColor(.purple)
             }
         }
     }
@@ -60,7 +62,6 @@ struct ButtonAnimationView: View {
             self.fullcircle = false
         }
     }
-    
 }
 
 struct ButtonAnimationView_Previews: PreviewProvider {
